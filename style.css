@@ -7,10 +7,11 @@
   --bg-mid: #ebe5d9;
   --bg-card: #e2dbd0;
   --cream: #2c2418;
-  --cream-muted: #6b5d4f;
+  --cream-muted: #5a4d40;
   --gold: #8b6914;
   --gold-light: #a67c1a;
   --gold-dark: #6b5010;
+  --accent: #b8854a;
   --ff-heading: 'Playfair Display', Georgia, serif;
   --ff-body: 'Lato', 'Helvetica Neue', sans-serif;
 }
@@ -145,8 +146,8 @@ a:hover { color: var(--gold-light); }
 .about { background: var(--bg-mid); text-align: center; }
 .about-badge {
   display: inline-block; padding: .4rem 1.5rem; margin-bottom: 1.5rem;
-  border: 1px solid var(--gold); border-radius: 30px;
-  font-size: .85rem; color: var(--gold); letter-spacing: .08em;
+  border: 1px solid var(--accent); border-radius: 30px;
+  font-size: .85rem; color: var(--accent); letter-spacing: .08em;
   text-transform: uppercase;
 }
 .about-text {
