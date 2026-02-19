@@ -96,30 +96,149 @@ const menuData = {
   },
 
   // ─── LE SUCRÉ ──────────────────────────────────────────────
-  // À compléter
   sucre: {
     title: "Le Sucré",
     categories: [
       {
-        name: "Nos desserts",
+        name: "Coupes glacées",
         items: [
-          // À compléter — ajoutez vos desserts ici :
-          // { name: "Nom du dessert", description: "détails", price: "0.00" },
+          {
+            name: "Vallon",
+            description: "Glace vanille, compotée de myrtilles, crumble et chantilly maison",
+            price: "8.50"
+          },
+          {
+            name: "Criou",
+            description: "Glaces chocolat Valrhona et croquantine, madeleine, chocolat chaud et chantilly maison",
+            price: "11.00"
+          },
+          {
+            name: "Clarine",
+            description: "Glace vanille, sorbet framboise, coulis de framboises, chantilly maison",
+            price: "11.00"
+          },
+          {
+            name: "Dame blanche",
+            description: "Glace vanille, chocolat chaud et chantilly maison",
+            price: "11.00"
+          }
+        ]
+      },
+      {
+        name: "Desserts",
+        items: [
+          {
+            name: "Faisselle de Samoëns",
+            description: "au coulis de myrtilles ou framboises",
+            price: "7.00"
+          },
+          {
+            name: "Meringue \"Double crème\"",
+            description: "",
+            price: "10.50"
+          },
+          {
+            name: "Crème brûlée maison au Génépi",
+            description: "et son shooter de Génépi",
+            price: "11.50"
+          },
+          {
+            name: "Mousse au chocolat maison",
+            description: "et son crumble",
+            price: "9.00"
+          },
+          {
+            name: "Profiteroles",
+            description: "sauce chocolat maison",
+            price: "11.00"
+          }
         ]
       }
     ]
   },
 
   // ─── LES VINS ──────────────────────────────────────────────
-  // À compléter
   vins: {
     title: "Les Vins",
     categories: [
       {
-        name: "Notre sélection",
+        name: "Rouge",
         items: [
-          // À compléter — ajoutez vos vins ici :
-          // { name: "Nom du vin", description: "région, cépage", price: "0.00" },
+          {
+            name: "Gamay — Entre Lacs et Sommets",
+            description: "Vin de Savoie AOP — Frais, Léger, Fruité",
+            price: "7.00 (12cl) · 28.00 (75cl)"
+          },
+          {
+            name: "Mondeuse Vieilles Vignes — Cave de Chautagne",
+            description: "Vin de Savoie AOP — Élégante, Épicée",
+            price: "30.00 (75cl)"
+          },
+          {
+            name: "Vacqueyras — Château des Hautes-Ribes",
+            description: "Rhône AOP — Élégant, Harmonieux, Fruits noirs",
+            price: "39.00 (75cl)"
+          },
+          {
+            name: "Pic Saint-Loup — Les Déesses Muettes \"Exception\"",
+            description: "Languedoc-Roussillon AOP — Fruité, Fondu, Réglissé",
+            price: "8.50 (12cl) · 37.00 (75cl)"
+          }
+        ]
+      },
+      {
+        name: "Blanc",
+        items: [
+          {
+            name: "Apremont — Domaine Chapot",
+            description: "Vin de Savoie AOP — Sec, Floral",
+            price: "7.00 (12cl) · 28.00 (75cl)"
+          },
+          {
+            name: "Roussette Altesse Vieilles Vignes — Cave de Chautagne",
+            description: "Vin de Savoie AOP — Élégant, Fin, Complexe",
+            price: "31.50 (75cl)"
+          },
+          {
+            name: "Chardonnay \"Confidence\" — Cave de Chautagne",
+            description: "Vin de Savoie AOP — Pur, Équilibré",
+            price: "7.50 (12cl) · 30.00 (75cl)"
+          },
+          {
+            name: "Bourgogne Aligoté — André Ducal",
+            description: "Bourgogne AOP — Fraîcheur, Vivacité, Floral",
+            price: "31.50 (75cl)"
+          }
+        ]
+      },
+      {
+        name: "Rosé",
+        items: [
+          {
+            name: "Côtes de Provence — Amaryllis",
+            description: "Provence AOP — Finesse, Floral, Robe pâle",
+            price: "7.50 (12cl) · 29.50 (75cl)"
+          }
+        ]
+      },
+      {
+        name: "Vins en carafe",
+        items: [
+          {
+            name: "Rouge — Les Magerans",
+            description: "AOP Côtes du Rhône",
+            price: "5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
+          },
+          {
+            name: "Blanc — Sauvignon Maslourel",
+            description: "IGP Pays d'Oc",
+            price: "5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
+          },
+          {
+            name: "Rosé — Tères Antiques",
+            description: "IGP Méditerranée",
+            price: "5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
+          }
         ]
       }
     ]
