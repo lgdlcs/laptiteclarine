@@ -51,7 +51,8 @@ a:hover { color: var(--gold-light); }
 .nav-logo {
   font-family: var(--ff-heading);
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: .08em;
   color: var(--cream);
 }
 .nav-links {
@@ -93,7 +94,8 @@ a:hover { color: var(--gold-light); }
 }
 .hero-title {
   font-family: var(--ff-heading); font-size: clamp(2.8rem, 7vw, 5.5rem);
-  font-weight: 700; color: var(--cream); margin-bottom: .3em;
+  font-weight: 400; color: var(--cream); margin-bottom: .3em;
+  letter-spacing: .06em;
   text-shadow: 0 4px 30px rgba(0,0,0,.6);
 }
 .hero-tagline {
@@ -125,9 +127,10 @@ a:hover { color: var(--gold-light); }
 .btn-sm { padding: .55rem 1.2rem; font-size: .85rem; }
 
 /* ─── SECTIONS ─── */
-.section { padding: 5rem 0; }
+.section { padding: 6rem 0; }
 .section-title {
   font-family: var(--ff-heading); font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 400; letter-spacing: .05em;
   text-align: center; margin-bottom: 2.5rem; color: var(--cream);
 }
 
@@ -144,14 +147,19 @@ a:hover { color: var(--gold-light); }
   line-height: 1.9; color: var(--cream-muted);
 }
 
-/* ─── PARALLAX DIVIDER ─── */
-.parallax-divider {
-  height: 350px;
-  background-size: cover; background-position: center;
-  background-attachment: fixed;
+/* ─── IMAGE BREAK ─── */
+.image-break {
+  padding: 2rem 0;
+  background: var(--bg-dark);
 }
-@supports (-webkit-touch-callout: none) {
-  .parallax-divider { background-attachment: scroll; }
+.full-image {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 4px;
+  object-fit: cover;
+  max-height: 500px;
 }
 
 /* ─── MENU ─── */
