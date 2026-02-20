@@ -6,7 +6,7 @@
 // Pour changer : remplacer SHEET_ID par l'ID de votre Google Sheet
 // Le sheet doit être "Publié sur le web" (Fichier > Partager > Publier)
 // Colonnes attendues : tab | category | note | name | description | price
-const SHEET_ID = 'VOTRE_SHEET_ID_ICI';
+const SHEET_ID = '10uKcLHtodSsiZ52miMsnNTn2CofL1pFKrp0I6D_sEzI';
 const SHEET_NAME = 'Menu';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
 

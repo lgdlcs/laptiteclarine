@@ -1,0 +1,36 @@
+tab,category,note,name,description,price
+sale,Spécialités à partager,2 personnes minimum,Fondue savoyarde,et salade verte,25.00
+sale,Spécialités à partager,,Fondue savoyarde aux morilles,et salade verte,29.00
+sale,Spécialités à partager,,Fondue savoyarde aux cèpes,et salade verte,28.00
+sale,Spécialités à partager,,Fondue Suisse moitié-moitié,"pommes de terre et salade verte",30.00
+sale,Spécialités à partager,,Raclette au lait cru,"sur réservation, intérieur uniquement — pommes de terre, charcuterie et salade verte",29.50
+sale,Nos plats,,Tartiflette,charcuterie et salade verte,23.50
+sale,Nos plats,,Reblochon rôti au miel,"pommes de terre, charcuterie et salade verte",26.50
+sale,Nos plats,,Croûte savoyarde,charcuterie et salade verte,23.00
+sale,Nos plats,,Délice de la Clarine,"pommes de terre, charcuterie et salade verte",26.00
+sale,Nos plats,,Diots fumés sauce au vin blanc,pommes de terre dorées,24.50
+sale,Nos plats,,Gratin de Crozets au Reblochon,charcuterie et salade verte,23.50
+sale,Nos plats,,Assiette du randonneur,,23.50
+sale,Nos plats,,Salade Clarine,,23.50
+sale,Nos plats,,Filet de bœuf sauce aux morilles,pommes de terre dorées,36.50
+sucre,Coupes glacées,,Vallon,"Glace vanille, compotée de myrtilles, crumble et chantilly maison",8.50
+sucre,Coupes glacées,,Criou,"Glaces chocolat Valrhona et croquantine, madeleine, chocolat chaud et chantilly maison",11.00
+sucre,Coupes glacées,,Clarine,"Glace vanille, sorbet framboise, coulis de framboises, chantilly maison",11.00
+sucre,Coupes glacées,,Dame blanche,"Glace vanille, chocolat chaud et chantilly maison",11.00
+sucre,Desserts,,Faisselle de Samoëns,au coulis de myrtilles ou framboises,7.00
+sucre,Desserts,,Meringue "Double crème",,10.50
+sucre,Desserts,,Crème brûlée maison au Génépi,et son shooter de Génépi,11.50
+sucre,Desserts,,Mousse au chocolat maison,et son crumble,9.00
+sucre,Desserts,,Profiteroles,sauce chocolat maison,11.00
+vins,Rouge,,Gamay — Entre Lacs et Sommets,"Vin de Savoie AOP — Frais, Léger, Fruité","7.00 (12cl) · 28.00 (75cl)"
+vins,Rouge,,Mondeuse Vieilles Vignes — Cave de Chautagne,"Vin de Savoie AOP — Élégante, Épicée",30.00 (75cl)
+vins,Rouge,,Vacqueyras — Château des Hautes-Ribes,"Rhône AOP — Élégant, Harmonieux, Fruits noirs",39.00 (75cl)
+vins,Rouge,,Pic Saint-Loup — Les Déesses Muettes "Exception","Languedoc-Roussillon AOP — Fruité, Fondu, Réglissé","8.50 (12cl) · 37.00 (75cl)"
+vins,Blanc,,Apremont — Domaine Chapot,"Vin de Savoie AOP — Sec, Floral","7.00 (12cl) · 28.00 (75cl)"
+vins,Blanc,,Roussette Altesse Vieilles Vignes — Cave de Chautagne,"Vin de Savoie AOP — Élégant, Fin, Complexe",31.50 (75cl)
+vins,Blanc,,Chardonnay "Confidence" — Cave de Chautagne,"Vin de Savoie AOP — Pur, Équilibré","7.50 (12cl) · 30.00 (75cl)"
+vins,Blanc,,Bourgogne Aligoté — André Ducal,"Bourgogne AOP — Fraîcheur, Vivacité, Floral",31.50 (75cl)
+vins,Rosé,,Côtes de Provence — Amaryllis,"Provence AOP — Finesse, Floral, Robe pâle","7.50 (12cl) · 29.50 (75cl)"
+vins,Vins en carafe,,Rouge — Les Magerans,AOP Côtes du Rhône,"5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
+vins,Vins en carafe,,Blanc — Sauvignon Maslourel,IGP Pays d'Oc,"5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
+vins,Vins en carafe,,Rosé — Tères Antiques,IGP Méditerranée,"5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)"
