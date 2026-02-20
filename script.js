@@ -20,7 +20,10 @@ function parseSheetToMenu(text) {
 
   const menu = {};
 
-  rows.forEach(row => {
+  // Skip header row if first cell is "tab"
+  const startIdx = (rows[0]?.c?.[0]?.v || '').toLowerCase() === 'tab' ? 1 : 0;
+
+  rows.slice(startIdx).forEach(row => {
     const cells = row.c;
     const tab = (cells[0] && cells[0].v || '').trim().toLowerCase();
     const category = (cells[1] && cells[1].v || '').trim();
