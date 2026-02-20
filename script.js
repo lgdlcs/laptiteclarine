@@ -2,7 +2,80 @@
    LA P'TITE CLARINE — Script
    ═══════════════════════════════════════════════ */
 
-document.addEventListener('DOMContentLoaded', () => {
+// ─── GOOGLE SHEET CONFIG ───
+// Pour changer : remplacer SHEET_ID par l'ID de votre Google Sheet
+// Le sheet doit être "Publié sur le web" (Fichier > Partager > Publier)
+// Colonnes attendues : tab | category | note | name | description | price
+const SHEET_ID = 'VOTRE_SHEET_ID_ICI';
+const SHEET_NAME = 'Menu';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
+
+/**
+ * Parse la réponse Google Sheets (JSONP-like) en menuData
+ */
+function parseSheetToMenu(text) {
+  // Google renvoie : google.visualization.Query.setResponse({...})
+  const json = JSON.parse(text.match(/google\.visualization\.Query\.setResponse\((.+)\)/s)[1]);
+  const rows = json.table.rows;
+
+  const menu = {};
+
+  rows.forEach(row => {
+    const cells = row.c;
+    const tab = (cells[0] && cells[0].v || '').trim().toLowerCase();
+    const category = (cells[1] && cells[1].v || '').trim();
+    const note = (cells[2] && cells[2].v || '').trim();
+    const name = (cells[3] && cells[3].v || '').trim();
+    const description = (cells[4] && cells[4].v || '').trim();
+    const price = (cells[5] && cells[5].v != null ? String(cells[5].v) : '').trim();
+
+    if (!tab || !name) return; // skip empty rows
+
+    // Titres des onglets
+    const tabTitles = { sale: 'Le Salé', sucre: 'Le Sucré', vins: 'Les Vins' };
+
+    if (!menu[tab]) {
+      menu[tab] = { title: tabTitles[tab] || tab, categories: [] };
+    }
+
+    // Trouver ou créer la catégorie
+    let cat = menu[tab].categories.find(c => c.name === category);
+    if (!cat) {
+      cat = { name: category, items: [] };
+      if (note) cat.note = note;
+      menu[tab].categories.push(cat);
+    }
+
+    cat.items.push({ name, description, price });
+  });
+
+  return menu;
+}
+
+/**
+ * Charge le menu depuis Google Sheets, fallback sur menu-data.js
+ */
+async function loadMenu() {
+  // Si pas de Sheet ID configuré, utiliser le fallback
+  if (SHEET_ID === 'VOTRE_SHEET_ID_ICI') {
+    console.log('📋 Menu: fallback local (pas de Sheet ID configuré)');
+    return menuDataFallback;
+  }
+
+  try {
+    const resp = await fetch(SHEET_URL);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const text = await resp.text();
+    const menu = parseSheetToMenu(text);
+    console.log('📋 Menu: chargé depuis Google Sheets');
+    return menu;
+  } catch (err) {
+    console.warn('📋 Menu: Google Sheets indisponible, fallback local', err);
+    return menuDataFallback;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
 
   // ─── NAVBAR SCROLL ───
   const navbar = document.getElementById('navbar');
@@ -39,7 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.15 });
   reveals.forEach(el => revealObserver.observe(el));
 
-  // ─── MENU TABS ───
+  // ─── MENU ───
+  const menuData = await loadMenu();
   const tabs = document.querySelectorAll('.menu-tab');
   const content = document.getElementById('menuContent');
 
