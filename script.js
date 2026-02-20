@@ -7,7 +7,7 @@
 // Le sheet doit être "Publié sur le web" (Fichier > Partager > Publier)
 // Colonnes attendues : tab | category | note | name | description | price
 const SHEET_ID = '1rltI_m009ZH3PNnt79sb2ZH4aS6LeypxBsy0iAeGw1I';
-const SHEET_NAME = 'menu-LaPtiteClarine';
+const SHEET_NAME = window.SHEET_NAME_OVERRIDE || 'menu-LaPtiteClarine';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
 
 /**

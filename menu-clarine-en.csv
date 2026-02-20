@@ -1,0 +1,36 @@
+tab;category;note;name;description;price
+sale;Sharing specialties;Minimum 2 people;Savoyard Fondue;with green salad;25.00
+sale;Sharing specialties;;Savoyard Fondue with Morels;with green salad;29.00
+sale;Sharing specialties;;Savoyard Fondue with Porcini;with green salad;28.00
+sale;Sharing specialties;;Swiss Fondue half-and-half;potatoes and green salad;30.00
+sale;Sharing specialties;;Raw Milk Raclette;reservation required, indoor only — potatoes, charcuterie and green salad;29.50
+sale;Our dishes;;Tartiflette;charcuterie and green salad;23.50
+sale;Our dishes;;Honey-roasted Reblochon;potatoes, charcuterie and green salad;26.50
+sale;Our dishes;;Croûte Savoyarde;charcuterie and green salad;23.00
+sale;Our dishes;;Délice de la Clarine;potatoes, charcuterie and green salad;26.00
+sale;Our dishes;;Smoked Diots in white wine sauce;golden potatoes;24.50
+sale;Our dishes;;Crozets gratin with Reblochon;charcuterie and green salad;23.50
+sale;Our dishes;;Hiker's Platter;;23.50
+sale;Our dishes;;Clarine Salad;;23.50
+sale;Our dishes;;Beef Fillet with Morel sauce;golden potatoes;36.50
+sucre;Ice cream sundaes;;Vallon;Vanilla ice cream, blueberry compote, crumble & homemade whipped cream;8.50
+sucre;Ice cream sundaes;;Criou;Valrhona chocolate ice cream & crunchy praline, madeleine, hot chocolate & homemade whipped cream;11.00
+sucre;Ice cream sundaes;;Clarine;Vanilla ice cream, raspberry sorbet, raspberry coulis & homemade whipped cream;11.00
+sucre;Ice cream sundaes;;Dame Blanche;Vanilla ice cream, hot chocolate & homemade whipped cream;11.00
+sucre;Desserts;;Faisselle from Samoëns;with blueberry or raspberry coulis;7.00
+sucre;Desserts;;Meringue "Double cream";;10.50
+sucre;Desserts;;Homemade Génépi Crème Brûlée;with a Génépi shooter;11.50
+sucre;Desserts;;Homemade Chocolate Mousse;with crumble;9.00
+sucre;Desserts;;Profiteroles;homemade chocolate sauce;11.00
+vins;Red;;Gamay — Entre Lacs et Sommets;Savoie AOP — Fresh, Light, Fruity;7.00 (12cl) · 28.00 (75cl)
+vins;Red;;Mondeuse Vieilles Vignes — Cave de Chautagne;Savoie AOP — Elegant, Spicy;30.00 (75cl)
+vins;Red;;Vacqueyras — Château des Hautes-Ribes;Rhône AOP — Elegant, Harmonious, Dark fruits;39.00 (75cl)
+vins;Red;;Pic Saint-Loup — Les Déesses Muettes "Exception";Languedoc-Roussillon AOP — Fruity, Smooth, Liquorice;8.50 (12cl) · 37.00 (75cl)
+vins;White;;Apremont — Domaine Chapot;Savoie AOP — Dry, Floral;7.00 (12cl) · 28.00 (75cl)
+vins;White;;Roussette Altesse Vieilles Vignes — Cave de Chautagne;Savoie AOP — Elegant, Fine, Complex;31.50 (75cl)
+vins;White;;Chardonnay "Confidence" — Cave de Chautagne;Savoie AOP — Pure, Balanced;7.50 (12cl) · 30.00 (75cl)
+vins;White;;Bourgogne Aligoté — André Ducal;Burgundy AOP — Fresh, Lively, Floral;31.50 (75cl)
+vins;Rosé;;Côtes de Provence — Amaryllis;Provence AOP — Finesse, Floral, Pale colour;7.50 (12cl) · 29.50 (75cl)
+vins;House wines (carafe);;Red — Les Magerans;AOP Côtes du Rhône;5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)
+vins;House wines (carafe);;White — Sauvignon Maslourel;IGP Pays d'Oc;5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)
+vins;House wines (carafe);;Rosé — Tères Antiques;IGP Méditerranée;5.50 (12cl) · 9.00 (25cl) · 17.00 (50cl)
