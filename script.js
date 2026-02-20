@@ -6,8 +6,8 @@
 // Pour changer : remplacer SHEET_ID par l'ID de votre Google Sheet
 // Le sheet doit être "Publié sur le web" (Fichier > Partager > Publier)
 // Colonnes attendues : tab | category | note | name | description | price
-const SHEET_ID = '10uKcLHtodSsiZ52miMsnNTn2CofL1pFKrp0I6D_sEzI';
-const SHEET_NAME = 'Menu';
+const SHEET_ID = '1rltI_m009ZH3PNnt79sb2ZH4aS6LeypxBsy0iAeGw1I';
+const SHEET_NAME = 'menu-LaPtiteClarine';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
 
 /**
@@ -27,7 +27,9 @@ function parseSheetToMenu(text) {
     const note = (cells[2] && cells[2].v || '').trim();
     const name = (cells[3] && cells[3].v || '').trim();
     const description = (cells[4] && cells[4].v || '').trim();
-    const price = (cells[5] && cells[5].v != null ? String(cells[5].v) : '').trim();
+    // price peut être number (Google le parse) ou string — on prend .f (formaté) en priorité, puis .v
+    const priceCell = cells[5];
+    const price = priceCell ? (priceCell.f || (priceCell.v != null ? String(priceCell.v) : '')) : '';
 
     if (!tab || !name) return; // skip empty rows
 
